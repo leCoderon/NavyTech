@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+
 }
 
 /* VARIABLES */
@@ -27,6 +33,8 @@ body {
     line-height: 1.7;
     color: var(--c-body);
     font-size: 20px;
+    scroll-behavior: smooth;
+
 }
 
 h1,
@@ -106,7 +114,8 @@ img {
 a.btn-brand {
     color: var(--c-white);
     background-color: var(--c-navy-blue);
-    padding: 24px 78px;
+    /* padding: 24px 78px; */
+    padding: 15px 30px;
     border-radius: 16px;
     font-size: 24px;
 }
@@ -204,9 +213,26 @@ a.details-button {
     color: black;
 }
 
+#services .service-card:nth-child(4):hover,
+.service-card:nth-child(2):hover {
+    background-color: var(--c-bright-blue);
+
+}
+
 #services .bg-gray {
     background-color: var(--c-bright-blue);
 }
+
+#services .bg-gray:hover {
+    background-color: var(--c-white);
+}
+
+
+
+
+/* #services .bg-gray:nth-child(3):hover~.service-card:nth-child(4) {
+    background-color: var(--c-bright-blue);
+} */
 
 /* PORTFOLIO */
 #portfolio h2 {
@@ -242,7 +268,8 @@ a.details-button {
     display: flex;
     justify-content: center;
 }
-#testimonial .pagination img{
+
+#testimonial .pagination img {
     cursor: pointer;
 }
 
